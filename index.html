@@ -26,9 +26,7 @@
 // }
 // console.log(expression(25,45));
 
-// let arrow = (sideA,sideB) => {
-//     return sideA * sideB;
-// }
+// let arrow = (sideA,sideB) => (sideA * sideB);
 // console.log(arrow(25,45));
 
 // // Task 2 ----------------------------------------------
@@ -43,9 +41,8 @@
 // }
 // console.log(expression(25,45));
 
-// let arrow = (sideA,sideB) => {
-//     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
-// }
+// let arrow = (sideA,sideB) => (Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2)));
+
 // console.log(arrow(25,45));
 
 // // Task 3 ---------------------------------------------
@@ -168,8 +165,9 @@
 // let arrayRandom = [55,45,35,25,65,75];
 // function declaration(array, defoltAndReverse = 'asc') {
 //     let tmp;
-//     for(let i = 0; i < array.length; i++){
-//         for(let x = 0; x < array.length;x++){       
+//     let arrayLength = array.length;
+//     for(let i = 0; i < arrayLength; i++){
+//         for(let x = 0; x < arrayLength;x++){       
 //                if (defoltAndReverse === 'asc') {
 //                 if ((array[x] > array[x+1]) * 1) {
 //                     tmp = array[x];
@@ -194,8 +192,9 @@
 
 //  let expression = function (array, defoltAndReverse = 'asc') {
 //     let tmp;
-//     for(let i = 0; i < array.length; i++){
-//         for(let x = 0; x < array.length;x++){       
+//     let arrayLength = array.length;
+//     for(let i = 0; i < arrayLength; i++){
+//         for(let x = 0; x < arrayLength;x++){       
 //                if (defoltAndReverse === 'asc') {
 //                 if ((array[x] > array[x+1]) * 1) {
 //                     tmp = array[x];
@@ -220,8 +219,9 @@
 
 // let arrow = (array, defoltAndReverse = 'asc') => {
 //     let tmp;
-//     for(let i = 0; i < array.length; i++){
-//         for(let x = 0; x < array.length;x++){       
+//     let arrayLength = array.length;
+//     for(let i = 0; i < arrayLength; i++){
+//         for(let x = 0; x < arrayLength;x++){       
 //                if (defoltAndReverse === 'asc') {
 //                 if ((array[x] > array[x+1]) * 1) {
 //                     tmp = array[x];
@@ -250,7 +250,8 @@
 // let arrayRandom = [25,35,45,55,65,75,65,55,45,35,25,25];
 // function declaration (array, num) {
 //     let numT = 0;
-//     for (let i = 0; i < array.length; i++) {
+//     let arrayLength = array.length;
+//     for (let i = 0; i < arrayLength; i++) {
 //         if (array[i] === num) {
 //             numT++;
 //         }
@@ -265,7 +266,8 @@
 
 // let expression = function (array, num) {
 //     let numT = 0;
-//     for (let i = 0; i < array.length; i++) {
+//let arrayLength = array.length;
+//     for (let i = 0; i < arrayLength; i++) {
 //         if (array[i] === num) {
 //             numT++;
 //         }
@@ -280,7 +282,8 @@
 
 // let arrow = (array, num) => {
 //     let numT = 0;
-//     for (let i = 0; i < array.length; i++) {
+//let arrayLength = array.length;
+//     for (let i = 0; i < arrayLength; i++) {
 //         if (array[i] === num) {
 //             numT++;
 //         }
@@ -298,27 +301,30 @@
 // Task 1 --------------------------------------------------
 // let massiv = ['Alex', 'Vanya', 'Tanya', 'Lena', 'Tolya'];
 // function newReverse (massiv){
-//    var a = [];
-//    for (i = 0; i < massiv.length; i++){
-//       a[i] = massiv[(massiv.length - 1) - i]
+//    let a = [];
+//    let arrayLength = massiv.length;
+//    for (let i = 0; i < arrayLength; i++){
+//       a[i] = massiv[(arrayLength - 1) - i]
 //    }
 //    return a
 // }
 // console.log(newReverse(massiv));
 // Task 2 -------------------------------------------------
 // let massiv = [44, 12, 11, 7, 1, 99, 43, 5, 69]
-// function newReverse(array) {
-//   var a = [];
-//   while (array.length) {
-//     a.push(array.pop());
-//   }
-//   return a;
+// function newReverse(massiv) {
+//   let a = [];
+//   let arrayLength = massiv.length;
+//   for (let i = 0; i < arrayLength; i++){
+//       a[i] = massiv[(arrayLength - 1) - i]
+//     }
+//     return a
 // }
 // console.log(newReverse(massiv));
 // Task 3 -------------------------------------------------
 // let str = 'Hi I am ALex';
 // let strRevers = "";
-// for (i = str.length-1; i >= 0; i--) {
+// let strLength = str.length
+// for (i = strLength-1; i >= 0; i--) {
 //   strRevers += str[i];
 // }
 // console.log(strRevers);
@@ -326,7 +332,8 @@
 // let str = 'Hi I am ALex'
 // function strLowerCase() {
 //     let newStr = "";
-//     for(let i = 0; i < str.length; i++) {
+//     let strLength = str.length
+//     for(let i = 0; i < strLength; i++) {
 //         let code = str.charCodeAt(i);
 //         if(code >= 65 && code <= 90) {
 //             code += 32;
@@ -338,7 +345,8 @@
 // let str = 'Hi I am ALex'
 // function strUpperCase() {
 //      let newStr = "";
-//      for(let i = 0; i < str.length; i++) {
+//      let strLength = str.length
+//      for(let i = 0; i < strLength; i++) {
 //         let code = str.charCodeAt(i);
 //          if(code >= 97 && code <= 122) {
 //              code -= 32;
@@ -350,7 +358,8 @@
 // let str = 'Hi I am ALex'
 // let strWordArr = str.split(" ");  
 // let reverseWord=[];
-//      for(let i=(strWordArr.length)-1;i>=0;i--) {
+// let strLength = strWordArr.length
+//      for(let i=(strLength)-1;i>=0;i--) {
 //           reverseWord.push(strWordArr[i]); 
 //      }
 //       console.log(reverseWord.join(" ")); 
@@ -378,7 +387,8 @@
 // Task 10 ----------------------------------------------
 // let arr = [44, 12, 11, 7, 1, 99, 43, 5, 69]
 // function arrSort() {
-//     for (var i = 1; i < arr.length; i++) {
+//     let arrLength = arr.length  
+//     for (var i = 1; i < arrLength; i++) {
 //         var tmp = arr[i];
 //         for (var j = i - 1; j >= 0 && (arr[j] < tmp); j--) {
 //             arr[j + 1] = arr[j];
