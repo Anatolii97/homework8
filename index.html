@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsHw8</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+// ---------------------------------------- PART 1 ----------------------------------------
+
+
+// Task 1 ------------------------------------------------
+
+// function declatation (sideA,sideB) {
+//     return sideA * sideB;
+// }
+// console.log(declatation(25,45));
+
+// let expression = function (sideA,sideB) {
+//     return sideA * sideB;
+// }
+// console.log(expression(25,45));
+
+// let arrow = (sideA,sideB) => {
+//     return sideA * sideB;
+// }
+// console.log(arrow(25,45));
+
+// // Task 2 ----------------------------------------------
+
+// function declaration(sideA,sideB){
+//     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+// }
+// console.log(declaration(25,45));
+
+// let expression = function (sideA,sideB) {
+//     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+// }
+// console.log(expression(25,45));
+
+// let arrow = (sideA,sideB) => {
+//     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+// }
+// console.log(arrow(25,45));
+
+// // Task 3 ---------------------------------------------
+
+// function declaration(a,b,c) {
+//     return (b ** 2 - 4 * a * c);
+// }
+// console.log(declaration(25,45,35));
+
+// let expression = function (a,b,c) {
+//     return (b ** 2 - 4 * a * c);
+// }
+// console.log(expression(25,45,35));
+
+// let arrow = (a,b,c) => {
+//     return (b ** 2 - 4 * a * c);
+// }
+// console.log(arrow(25,45,35));
+
+// Task 4 ---------------------------------------------
+
+// function declaration() {
+//     let array = [];
+//     for (let i = 0; i < 100;i++) {
+//         if (i % 2 === 0) {
+//             array.push(i) ;
+//         }
+//     }
+//     return array
+// }
+// console.log(declaration());
+
+// let expression = function () {
+//     let array = [];
+//     for (let i = 0; i < 100;i++) {
+//         if (i % 2 === 0) {
+//             array.push(i) ;
+//         }
+//     }
+//     return array
+// }
+// console.log(expression());
+
+// let arrow = () => {
+//     let array = [];
+//     for (let i = 0; i < 100;i++) {
+//         if (i % 2 === 0) {
+//             array.push(i) ;
+//         }
+//     }
+//     return array
+// }
+// console.log(arrow());
+
+// Task 5 ---------------------------------------------
+// function declaration() {
+//     let array = [];
+//     for (let i = 0; i < 100;i++) {
+//         if (i % 2 !== 0) {
+//             array.push(i) ;
+//         }
+//     }
+//     return array
+// }
+// console.log(declaration());
+
+// let expression = function () {
+//     let array = [];
+//     for (let i = 0; i < 100;i++) {
+//         if (i % 2 !== 0) {
+//             array.push(i) ;
+//         }
+//     }
+//     return array
+// }
+// console.log(expression());
+
+// let arrow = () => {
+//     let array = [];
+//     for (let i = 0; i < 100;i++) {
+//         if (i % 2 !== 0) {
+//             array.push(i) ;
+//         }
+//     }
+//     return array
+// }
+// console.log(arrow());
+
+// Task 6 ---------------------------------------------
+
+// function declaration (x,n) {
+//     let result = x;
+//     for(let i = 1;i < n; i++){    
+//         result *= x;
+//     }
+//     return result;
+// }
+// console.log(declaration(3,3));
+
+// let expression = function (x,n) {
+//     let result = x;
+//     for(let i = 1;i < n; i++){    
+//         result *= x;
+//     }
+//     return result;
+// }
+// console.log(expression(3,3));
+
+// let arrow = (x,n) => {
+//     let result = x;
+//     for(let i = 1;i < n; i++){    
+//         result *= x;
+//     }
+//     return result;
+// }
+// console.log(arrow(3,3));
+
+// // Task 7 ---------------------------------------------
+    
+// let arrayRandom = [55,45,35,25,65,75];
+// function declaration(array, defoltAndReverse = 'asc') {
+//     let tmp;
+//     for(let i = 0; i < array.length; i++){
+//         for(let x = 0; x < array.length;x++){       
+//                if (defoltAndReverse === 'asc') {
+//                 if ((array[x] > array[x+1]) * 1) {
+//                     tmp = array[x];
+//                     array[x] = array[x+1];
+//                     array[x+1] = tmp;
+//                 }
+//             }
+//             else if (defoltAndReverse === 'desc') {
+//                 if ((array[x] < array[x+1]) * 1) {
+//                     tmp = array[x];
+//                     array[x] = array[x+1];
+//                     array[x+1] = tmp;
+//                 }
+//             }
+//         }
+//     }
+//     return array;
+// }
+// console.log(declaration(arrayRandom))
+// console.log(declaration(arrayRandom, 'asc'))
+// console.log(declaration(arrayRandom, 'desc'))
+
+//  let expression = function (array, defoltAndReverse = 'asc') {
+//     let tmp;
+//     for(let i = 0; i < array.length; i++){
+//         for(let x = 0; x < array.length;x++){       
+//                if (defoltAndReverse === 'asc') {
+//                 if ((array[x] > array[x+1]) * 1) {
+//                     tmp = array[x];
+//                     array[x] = array[x+1];
+//                     array[x+1] = tmp;
+//                 }
+//             }
+//             else if (defoltAndReverse === 'desc') {
+//                 if ((array[x] < array[x+1]) * 1) {
+//                     tmp = array[x];
+//                     array[x] = array[x+1];
+//                     array[x+1] = tmp;
+//                 }
+//             }
+//         }
+//     }
+//     return array;
+// }
+// console.log(expression(arrayRandom))
+// console.log(expression(arrayRandom, 'asc'))
+// console.log(expression(arrayRandom, 'desc'))
+
+// let arrow = (array, defoltAndReverse = 'asc') => {
+//     let tmp;
+//     for(let i = 0; i < array.length; i++){
+//         for(let x = 0; x < array.length;x++){       
+//                if (defoltAndReverse === 'asc') {
+//                 if ((array[x] > array[x+1]) * 1) {
+//                     tmp = array[x];
+//                     array[x] = array[x+1];
+//                     array[x+1] = tmp;
+//                 }
+//             }
+//             else if (defoltAndReverse === 'desc') {
+//                 if ((array[x] < array[x+1]) * 1) {
+//                     tmp = array[x];
+//                     array[x] = array[x+1];
+//                     array[x+1] = tmp;
+//                 }
+//             }
+//         }
+//     }
+//     return array;
+// }
+// console.log(arrow(arrayRandom))
+// console.log(arrow(arrayRandom, 'asc'))
+// console.log(arrow(arrayRandom, 'desc'))
+
+// Task 8 ---------------------------------------------
+
+// "use strict";
+// let arrayRandom = [25,35,45,55,65,75,65,55,45,35,25,25];
+// function declaration (array, num) {
+//     let numT = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === num) {
+//             numT++;
+//         }
+//     }
+//     if (numT === 0) {
+//         return `Число ${num} не найдено`;
+//     }else {
+//         return `Число ${num} найдено ${numT} раз(а)`;
+//     }
+// }
+// console.log(declaration(arrayRandom,25));
+
+// let expression = function (array, num) {
+//     let numT = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === num) {
+//             numT++;
+//         }
+//     }
+//     if (numT === 0) {
+//         return `Число ${num} не найдено`;
+//     }else {
+//         return `Число ${num} найдено ${numT} раз(а)`;
+//     }
+// }
+// console.log(expression(arrayRandom,25));
+
+// let arrow = (array, num) => {
+//     let numT = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === num) {
+//             numT++;
+//         }
+//     }
+//     if (numT === 0) {
+//         return `Число ${num} не найдено`;
+//     }else {
+//         return `Число ${num} найдено ${numT} раз(а)`;
+//     }
+// }
+// console.log(arrow(arrayRandom,25));
+
+
+// ---------------------------------------- PART 2 ----------------------------------------
+// Task 1 --------------------------------------------------
+// let massiv = ['Alex', 'Vanya', 'Tanya', 'Lena', 'Tolya'];
+// function newReverse (massiv){
+//    var a = [];
+//    for (i = 0; i < massiv.length; i++){
+//       a[i] = massiv[(massiv.length - 1) - i]
+//    }
+//    return a
+// }
+// console.log(newReverse(massiv));
+// Task 2 -------------------------------------------------
+// let massiv = [44, 12, 11, 7, 1, 99, 43, 5, 69]
+// function newReverse(array) {
+//   var a = [];
+//   while (array.length) {
+//     a.push(array.pop());
+//   }
+//   return a;
+// }
+// console.log(newReverse(massiv));
+// Task 3 -------------------------------------------------
+// let str = 'Hi I am ALex';
+// let strRevers = "";
+// for (i = str.length-1; i >= 0; i--) {
+//   strRevers += str[i];
+// }
+// console.log(strRevers);
+// Task 4 -------------------------------------------------
+// let str = 'Hi I am ALex'
+// function strLowerCase() {
+//     let newStr = "";
+//     for(let i = 0; i < str.length; i++) {
+//         let code = str.charCodeAt(i);
+//         if(code >= 65 && code <= 90) {
+//             code += 32;
+//         } newStr += String.fromCharCode(code);
+//     } return newStr;
+// }
+// console.log(strLowerCase(str));
+// Task 5 ------------------------------------------------
+// let str = 'Hi I am ALex'
+// function strUpperCase() {
+//      let newStr = "";
+//      for(let i = 0; i < str.length; i++) {
+//         let code = str.charCodeAt(i);
+//          if(code >= 97 && code <= 122) {
+//              code -= 32;
+//          } newStr += String.fromCharCode(code);
+//     } return newStr;
+//  }
+//  console.log(strUpperCase(str));
+// Task 6 ------------------------------------------------
+// let str = 'Hi I am ALex'
+// let strWordArr = str.split(" ");  
+// let reverseWord=[];
+//      for(let i=(strWordArr.length)-1;i>=0;i--) {
+//           reverseWord.push(strWordArr[i]); 
+//      }
+//       console.log(reverseWord.join(" ")); 
+// Task 7 ------------------------------------------------
+// let arr = ['Alex', 'Vanya', 'Tanya', 'Lena', 'Tolya'];
+// arr = arr.map(function(x){ return x.toLowerCase();
+// })
+// console.log(arr)
+// Task 8 ------------------------------------------------
+// let arr = ['Alex', 'Vanya', 'Tanya', 'Lena', 'Tolya'];
+//  arr = arr.map(function(x){ return x.toUpperCase();
+// })
+//  console.log(arr)
+// Task 9 ------------------------------------------------
+// let num = 1234678
+// function getReversedNum(num) {
+//   let result = 0;
+//   while (num) {
+//     result = result * 10 + num % 10;
+//     num = Math.floor(num / 10);
+//   }
+//   return result;
+// }
+// console.log(getReversedNum(num));
+// Task 10 ----------------------------------------------
+// let arr = [44, 12, 11, 7, 1, 99, 43, 5, 69]
+// function arrSort() {
+//     for (var i = 1; i < arr.length; i++) {
+//         var tmp = arr[i];
+//         for (var j = i - 1; j >= 0 && (arr[j] < tmp); j--) {
+//             arr[j + 1] = arr[j];
+//         }
+//         arr[j + 1] = tmp;
+//     }
+//     return arr;
+// }
+// console.log(arrSort(arr));
+</script>
+</html>
